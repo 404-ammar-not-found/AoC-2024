@@ -1,17 +1,6 @@
 import requests 
 import os 
 
-TEMPLATE = """with open("input.txt") as f:
-    lines = f.readlines()
-
-def part_1():
-    ...
-
-def part_2():
-    ...
-"""
-
-
 def download_input(day: int) -> bytes:
     URL = f"https://adventofcode.com/2024/day/{day}/input"
     #Reads in the auth key required to get input data
@@ -28,6 +17,14 @@ def download_input(day: int) -> bytes:
 def setup_day(day: int) -> None :
     origin_dir = os.getcwd()  
     dir_name = f"Day_{day:02}"
+    TEMPLATE = f"""with open("Day_01/data.txt") as f:
+    lines = f.readlines()
+
+def part_1():
+        pass
+def part_2():
+        pass
+    """
 
     os.mkdir(dir_name)
 
@@ -42,6 +39,6 @@ def setup_day(day: int) -> None :
 
     os.chdir(origin_dir)
 
-    
+
 for day in range(1,26):
     setup_day(day=day)

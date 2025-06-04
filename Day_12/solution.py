@@ -1,8 +1,8 @@
-with open("input.txt") as f:
+with open("Day_01/data.txt") as f:
     lines = f.readlines()
 
 def part_1():
-    ...
-
+        pass
 def part_2():
-    ...
+        pass
+    
