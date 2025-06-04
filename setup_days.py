@@ -27,7 +27,7 @@ def download_input(day: int) -> bytes:
 
 def setup_day(day: int) -> None :
     origin_dir = os.getcwd()  
-    dir_name = f"Day_{day}"
+    dir_name = f"Day_{day:02}"
 
     os.mkdir(dir_name)
 
