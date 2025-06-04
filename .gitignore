@@ -1,0 +1,7 @@
+data.txt
+.session
+Day_*/input.txt
+__pycache__/
+*.pyc
+venv/
+.env/
