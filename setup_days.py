@@ -17,7 +17,7 @@ def download_input(day: int) -> bytes:
 def setup_day(day: int) -> None :
     origin_dir = os.getcwd()  
     dir_name = f"Day_{day:02}"
-    TEMPLATE = f"""with open("Day_01/data.txt") as f:
+    TEMPLATE = f"""with open("Day_{day:02}/data.txt") as f:
     lines = f.readlines()
 
 def part_1():

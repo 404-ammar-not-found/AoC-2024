@@ -1,4 +1,4 @@
-with open("Day_01/data.txt") as f:
+with open("Day_05/data.txt") as f:
     lines = f.readlines()
 
 def part_1():
